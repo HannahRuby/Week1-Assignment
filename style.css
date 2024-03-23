@@ -96,9 +96,14 @@ nav-links ul li a:hover::after{width: 100%;}
     
 }
 
-.btn {
+.id sign-in{
     flex: 1;
     text-align: right;
+    border: none;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
 
 }
 
