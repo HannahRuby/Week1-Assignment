@@ -1,71 +1,135 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: sans-serif;
+    box-sizing: border-box;
+    
 }
 
-.background img {
-    max-width: 100%;
-   
+.body {
+    background: white;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+.flex-container {
+    background-image: url(./Assets/Farm\ background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container1 {
+   display: flex;
+   background-color: white;
+   flex-direction: row;
+   align-items: center;
+   margin: 30px;
+   justify-items: center;
+   text-wrap: wrap;
 }
 
-.main {
+.container2 {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px;
+    justify-items: center;
+    text-wrap: wrap;
+
+}
+
+
+.information {
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    font: White;
-    bottom: 0%;
-    left: 0%;
-} 
+    height: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
+.html {
+    scroll-behavior: smooth;
+}
+.main {
+    height: 140px;
+    border-bottom: solid black;
+}
+
+.welcome-header {
+    font: maroon;
+    font: italic;
+}
 
 .nav {
-    width: 80%;
-    margin: 20px auto;
-    display: flex;
-    align-items: center;
-
+  top: 0%;
+  display:flex ;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-links ul li { 
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
 
-.nav-links {
+.nav-links ul li a { 
+    color: brown;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav-links ul li a:hover::after{width: 100%;}
+
+
+.Name {
+    flex-basis: 20%;
+    color: maroon;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.btn {
     flex: 1;
     text-align: right;
-}
-.nav-links ul li {
-    display: inline-block;
-    margin: 0 20px;
-}
-.nav-link ul li a {
-    Color: black;
-    text-decoration: none;
+
 }
 
-.cookies {
-    background-color:black;
-    color: white;
-    padding: 16px;
-    border: 1px solid wheat;
-    font-size: 32px;
+* {
+    box-sizing: border-box;
+  }
+  .cookie-notice {
+    background-color: #191919;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-size: 20px;
     font-family: Arial;
     border-radius: 10px;
-
+  
     /* positioning styles */
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-
-}
-
-.button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .button {
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     border-radius: 4px;
     padding: 4px 8px;
     cursor: pointer;
   }
   
   .reject {
-    background-color: blue;
+    background-color: gold;
   }
   
   .approve {
@@ -73,8 +137,13 @@
   }
 
 .footer {
-    position: absolute;
+    display: flex;
+    gap:  3px;
+    border-top:solid black;
     text-align: center;
-    bottom: 10px;
-
+    bottom: 100px;
+    justify-content: center;
+    height: 80px;
+    align-items: center;  
+    margin-block-end: 40px 25px;   
 }
