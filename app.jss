@@ -18,9 +18,7 @@ let themeAnswer = prompt("Do you prefer a white or black theme?");
         document.body.style.backgroundColor = themeAnswer;
     }
 
-let cookieAnswer = True
+const myCookiebutton = document.querySelection("button");
 
-if (cookieAnswer === "yes please"){
-    document.
-}
-
+myCookiebutton.addEventlistener("click",function());
+console.log("cookie box disappears");
