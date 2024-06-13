@@ -1,24 +1,22 @@
-console.log("Hello There")
+console.log("Hello There");
 
 let loggedIn = false;
 
-if (loggedIn) 
-    console.log("Welcome!");
-
-else if (logIn = false)  console.log("Please log in");
-
+if (loggedIn) console.log("Welcome!");
+else if ((logIn = false)) console.log("Please log in");
 
 //theme
 
 let themeAnswer = prompt("Do you prefer a white or black theme?");
-    if (themeAnswer === "white"){
-        document.body.style.backgroundColor = themeAnswer;
-    }
-    else if (themeAnswer === "black"){
-        document.body.style.backgroundColor = themeAnswer;
-    }
+if (themeAnswer === "white") {
+  document.body.style.backgroundColor = themeAnswer;
+} else if (themeAnswer === "black") {
+  document.body.style.backgroundColor = themeAnswer;
+}
 
-const myCookiebutton = document.querySelection("button");
+const myCookieButton = document.querySelector("#acceptCookies");
 
-myCookiebutton.addEventlistener("click",function());
-console.log("cookie box disappears");
+myCookieButton.addEventListener("click", function () {
+  console.log("cookie box disappears");
+  document.getElementById("cookieBox").style.display = "none";
+});
